@@ -1,0 +1,12 @@
+{
+	"editor.tabSize": 4,
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": "explicit",
+		"source.sortMembers": "explicit",
+		"source.removeUnusedImports": "explicit",
+		"source.fixAll": "explicit"
+	},
+	"tailwindCSS.experimental.classRegex": [["tv\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]],
+	"scss.lint.unknownAtRules": "ignore",
+	"typescript.tsdk": "node_modules\\typescript\\lib"
+}

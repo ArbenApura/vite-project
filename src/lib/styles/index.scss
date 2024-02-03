@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	* {
+		@apply m-0 box-border p-0 font-["Poppins"] transition-opacity;
+	}
+	body {
+		@apply bg-emerald-100;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-semibold;
+	}
+	[disabled] {
+		@apply opacity-50;
+	}
+}
