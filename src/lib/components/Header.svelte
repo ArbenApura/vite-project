@@ -48,15 +48,15 @@
 		<hr class="border-emerald-300" />
 
 		<!-- TODO ADDER -->
-		<form class="flex gap-4" on:submit|preventDefault={handleSubmit}>
+		<form class="flex flex-col gap-4 sm:flex-row" on:submit|preventDefault={handleSubmit}>
 			<input
-				class="flex-grow rounded-md border border-emerald-300 bg-emerald-100 px-3 text-sm ring-emerald-600/60 ring-offset-1 ring-offset-transparent focus-visible:outline-none focus-visible:ring-1"
+				class="h-10 flex-grow rounded-md border border-emerald-300 bg-emerald-100 px-3 text-sm ring-emerald-600/60 ring-offset-1 ring-offset-transparent focus-visible:outline-none focus-visible:ring-1"
 				type="text"
 				placeholder="Description..."
 				bind:value={description}
 			/>
 			<button
-				class="flex items-center gap-2 rounded-md bg-emerald-600 px-4 py-2 text-white shadow-md hover:bg-emerald-700"
+				class="flex items-center justify-center gap-2 rounded-md bg-emerald-600 px-4 py-2 text-white shadow-md hover:bg-emerald-700"
 				disabled={!description || isLoading}
 			>
 				{#if isLoading}
