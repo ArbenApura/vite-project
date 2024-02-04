@@ -57,6 +57,7 @@
 			/>
 			<button
 				class="flex items-center justify-center gap-2 rounded-md bg-emerald-600 px-4 py-2 text-white shadow-md hover:bg-emerald-700"
+				type="submit"
 				disabled={!description || isLoading}
 			>
 				{#if isLoading}
