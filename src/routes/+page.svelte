@@ -19,7 +19,7 @@
 <main class="container mx-auto flex flex-col gap-4 p-4">
 	<section class="flex flex-col items-center gap-4 sm:flex-row">
 		<div class="flex flex-grow items-center gap-4">
-			<h2 class="text-xl">{$todos.length} Todos</h2>
+			<h2 class="text-xl">{$todos.length} Todo{$todos.length !== 1 ? 's' : ''}</h2>
 			<button
 				class="flex h-9 w-9 items-center justify-center rounded-md border bg-white hover:bg-gray-100"
 				disabled={$isLoading}
