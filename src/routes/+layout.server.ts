@@ -7,6 +7,8 @@ import { pb } from '$lib/pb';
 
 export const load: LayoutServerLoad = async () => {
 	return {
-		todos: await pb.collection<Todo>('todos').getFullList(),
+		todos: await pb.collection<Todo>('todos').getFullList({
+			sort: '-created'
+		}),
 	};
 };
