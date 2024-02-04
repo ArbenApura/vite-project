@@ -1,0 +1,16 @@
+{
+	"short_name": "Todo Application",
+	"name": "A Todo Application with Sveltekit and PocketBase",
+	"start_url": "/",
+	"icons": [
+		{
+			"src": "favicon.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"background_color": "#1e3a8a",
+	"theme_color": "#1e40af",
+	"display": "standalone",
+	"scope": "/"
+}
