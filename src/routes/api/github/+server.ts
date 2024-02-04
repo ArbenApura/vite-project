@@ -4,7 +4,6 @@ import type { RequestHandler } from './$types';
 import { exec } from 'child_process';
 
 export const POST: RequestHandler = async () => {
-	exec('git pull origin main && yarn install && yarn build');
+	exec('git pull origin main --force && yarn install && yarn build');
 	return new Response();
 };
-``;
